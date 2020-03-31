@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd        http://camel.apache.org/schema/spring       http://camel.apache.org/schema/spring/camel-spring.xsd">
     <camelContext id="camel" xmlns="http://camel.apache.org/schema/spring">
         <route id="_route1">
-            <from id="_from1" uri="netty4-http:http:0.0.0.0:9800/hr"/>
+            <from id="_from1" uri="netty4-http:http:0.0.0.0:8080/hr"/>
             <wireTap id="_myTap" uri="direct:hostTap"/>
             <setHeader headerName="Content-Type" id="_setHeader1">
                 <constant>application/json</constant>
